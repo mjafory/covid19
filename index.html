@@ -17,8 +17,8 @@
     <br>
     <div class="wrapper">
         <h1 style="text-align: center;color: white;padding: 10px;">COVID-19 LIVE TRACKER
-            <hr><span id="today"></span>
-            <hr><span id="yesterday"></span>
+            <hr><span id="today" style="font-size: 15px;"></span>
+            <!--            <hr><span id="yesterday"></span>-->
         </h1>
         <br>
         <div class="statistic">
@@ -64,18 +64,59 @@
         </div>
     </div>
 
+    <span class="openNav" onclick="openNav()">&#9776;</span>
+
+
+
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="https://www.worldometers.info/coronavirus/coronavirus-symptoms/">=> Coronavirus Symptoms (COVID-19)</a>
+        <a href="https://www.worldometers.info/coronavirus/coronavirus-incubation-period/">=> Incubation Period</a>
+        <a href="https://www.worldometers.info/coronavirus/coronavirus-death-rate/">=> Mortality Rate</a>
+        <a href="https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/">=> Age, Sex, and existing conditions of Deaths</a>
+
+
+        <br>
+        <br>
+
+
+        <a href="https://rapidapi.com/">API Resource: Rapidapi</a>
+        <a href="https://www.worldometers.info/coronavirus/">Information Courtesy by Worldo Meters </a>
+
+
+
+
+    </div>
+
     <script src='js/api.js'></script>
     <script>
         var d = new Date();
         document.getElementById("today").innerHTML = d;
+
     </script>
 
+    <!--
 
     <script>
         var yesterday = new Date();
 yesterday.setDate(yesterday.getDate() - 1);
 document.getElementById("yesterday").innerHTML = yesterday;
     </script>
+-->
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
 
 
 
