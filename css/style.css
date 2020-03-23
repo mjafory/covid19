@@ -5,7 +5,10 @@
     font-family: 'Baloo 2', cursive;
 }
 body{
-    background-color: #1e88e5;
+   background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 .wrapper{
     width: 80%;
@@ -39,7 +42,7 @@ body{
 .box_wrapper .box{
     background-color: #fafafa;
     box-shadow: 0px 0px 18px 0px black;
-    margin-bottom: 10px;
+    margin: 10px;
     width:100%;
     text-align: center;
     padding: 15px 0;
@@ -64,13 +67,16 @@ tr:first-child{
     color: #fafafa;
     text-transform: uppercase;
 }
-th{
+th{ 
     padding: 15px 0;
     border: none;
     border-spacing: 0;
     background-color: brown;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
     border: 2px solid white;
+     position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 tr:nth-child(even){
     background-color: #fafafa;
@@ -88,12 +94,21 @@ tr td{
 }
 
 @media screen and (max-width:800px) {
+    
+
     .wrapper .box_wrapper{
     display: block;
     flex-wrap: nowrap;
     flex-direction: row;
 }
+    box_wrapper .box{
+    margin:0px;
+    margin-bottom: 10px;
+     }
+    
+    th{  font-size: 12px; }
 }
+
 #countries_stat {
     position: absolute;
     left: 50%;
