@@ -13,4 +13,6 @@ RapidApi will provide you the code to fetch the different data, you need to crea
 ### Download
 If you like to get the source code [Go Download](https://github.com/jaffery97/covid19/archive/master.zip) to learn how to use RapidAPI and how to fetch different data to get the coronavirus statistic evolution.
 
+#### Need Help on your assignment ? [Go here](https://edchat.info/ed).
+
 
