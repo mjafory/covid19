@@ -1,13 +1,13 @@
 # COVID19 🦠 
 
-# Make a simple Coronavirus live tracker in HTML, CSS & javascript using Rapid API
+### Make a simple Coronavirus live tracker in HTML, CSS & javascript using Rapid API
 
 RapidApi will provide you the code to fetch the different data, you need to create an account and it's absolutely free.
-[Go to this URL and create your free account:](https://rapidapi.com/astsiatsko/api/coronavirus-monitor).
+[Go here and create your free account](https://rapidapi.com/astsiatsko/api/coronavirus-monitor).
 
-# Watch Video Tutorial
+## Watch Video Tutorial
 [Watch video with details on youtube](https://youtu.be/PckL9D204KM).
-# Demo 
+## Demo 
 [Click Here](https://jaffery97.github.io/covid19/).
 
 ### Download
