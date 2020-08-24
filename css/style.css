@@ -5,6 +5,10 @@
     font-family: 'Baloo 2', cursive;
 }
 
+ul {
+    padding-left: 30px;
+}
+
 body {
 /*
     background: #0F2027;
@@ -14,7 +18,7 @@ body {
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 */
     
-    background-color: green;
+    background-color: darkslategray;
   
 
 }

@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta http-equiv="Refresh" content="60";>
+    <meta http-equiv="Refresh" content="60" ;>
     <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
     <title>COVID-19 TRACKER</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -64,39 +64,76 @@
             </table>
         </div>
     </div>
-    
-   
+
+
 
     <span class="openNav" onclick="openNav()">&#9776;</span>
 
-
-
-
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="https://www.worldometers.info/coronavirus/coronavirus-symptoms/">=> Coronavirus Symptoms (COVID-19)</a>
-        <a href="https://www.worldometers.info/coronavirus/coronavirus-incubation-period/">=> Incubation Period</a>
-        <a href="https://www.worldometers.info/coronavirus/coronavirus-death-rate/">=> Mortality Rate</a>
-        <a href="https://www.worldometers.info/coronavirus/coronavirus-age-sex-demographics/">=> Age, Sex, and existing conditions of Deaths</a>
+        <div style="">
+            <details style="color: aliceblue;">
+                <summary> Coronavirus Symptoms (COVID-19)</summary>
+                <ul>
+                    <li> Fever </li>
+                    <li> Cough </li>
+                    <li> Shortness of breath or difficulty breathing </li>
+                    <li> Chills </li>
+                    <li> Repeated shaking with chills </li>
+                    <li> Muscle pain </li>
+                    <li> Headache </li>
+                    <li> Sore throat </li>
+                    <li> New loss of taste or smell </li>
+                </ul>
 
+            </details>
 
-        <br>
-        <br>
+            <details style="color: aliceblue;">
+                <summary> Incubation Period</summary>
+                <ul>
+                    <li> 2 - 14 days</li>
+                    <li> Possible outliers: 0 - 27 days</li>
 
+                </ul>
+            </details>            
+            
+            
+            <details style="color: aliceblue;">
+                <summary> Mortality Rate</summary>
+                <ul>
+                    <li>
 
-        <a href="https://rapidapi.com/">API Resource: Rapidapi</a>
-        <a href="https://www.worldometers.info/coronavirus/">Information Courtesy by Worldo Meters </a>
+                        The number of actual cases. We need to know the number of actual cases (not merely the reported ones, which are typically only a small portion of the actual ones) that have already had an outcome (positive or negative: recovery or death), not the current cases that still have to resolve (the case sample shall contain zero active cases and include only "closed" cases). </li>
+                    
+                    <li>The number of actual deaths related to the closed cases examined above.</li>
+                    
+                    <p>Considering that a large number of cases are asymptomatic (or present with very mild symptoms) and that testing has not been performed on the entire population, only a fraction of the SARS-CoV-2 infected population is detected, confirmed through a laboratory test, and officially reported as a COVID-19 case. The number of actual cases is therefore estimated to be at several multiples above the number of reported cases. The number of deaths also tends to be underestimated, as some patients are not hospitalized and not tested.</p>
 
+                </ul>
+            </details>
+        
+            
+            <details style="color: aliceblue;">
+                <summary>Age, Sex, and existing conditions of Deaths</summary>
+                <center> <img src="age%20.png" width="320px"> </center>
+            </details> 
+            <br>
+            <br>
 
+            <center>
+            <a href="https://rapidapi.com/">API Resource: Rapidapi</a>
+            </center>
+            <br>
+            <br>
+        </div>
 
-
+        <p style="text-align: center;color: white;">Build by Jafory | Using HTML, CSS, Javascript & Rapidapi</p>
     </div>
 
     <script src='js/api.js'></script>
     <script>
         var d = new Date();
         document.getElementById("today").innerHTML = d;
-
     </script>
 
     <!--
@@ -117,7 +154,6 @@ document.getElementById("yesterday").innerHTML = yesterday;
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
         }
-
     </script>
 
 
