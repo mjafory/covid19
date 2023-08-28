@@ -11,19 +11,19 @@ let table = document.getElementById('countries_stat')
 fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
     "method": "GET",
     "headers": {
-        "x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-        "x-rapidapi-key": "bcc93bfd73msh44b00a724a0e158p14e693jsna9192b86aa01"
+        'X-RapidAPI-Key': 'edd2277260mshf152755896d31e4p195aadjsn63b6c16d27fd',
+		'X-RapidAPI-Host': 'coronavirus-monitor.p.rapidapi.com'
     }
 })
-.then(response => response.json().then( data => {
+.then(response => response.json().then(data => {
     console.log(data);
-    total_cases.innerHTML = data.total_cases;
-    new_cases.innerHTML = data.new_cases;
-    new_death.innerHTML = data.new_deaths;
-    total_death.innerHTML = data.total_deaths;
-    total_recovered.innerHTML = data.total_recovered;
-
-})).catch(err => {
+    total_cases.innerHTML = data["Total Cases_text"];
+    new_cases.innerHTML = data["New Cases_text"];
+    new_death.innerHTML = data["New Deaths_text"];
+    total_death.innerHTML = data["Total Deaths_text"];
+    total_recovered.innerHTML = data["Total Recovered_text"];
+}))
+.catch(err => {
     console.log(err);
 });
 
@@ -31,8 +31,8 @@ fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php", {
 fetch("https://coronavirus-monitor.p.rapidapi.com/coronavirus/cases_by_country.php", {
    "method": "GET",
 	"headers": {
-		"x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
-		"x-rapidapi-key": "bcc93bfd73msh44b00a724a0e158p14e693jsna9192b86aa01"
+        'X-RapidAPI-Key': 'edd2277260mshf152755896d31e4p195aadjsn63b6c16d27fd',
+        'X-RapidAPI-Host': 'coronavirus-monitor.p.rapidapi.com'
     }
 })
 .then(response => response.json().then(data =>{
